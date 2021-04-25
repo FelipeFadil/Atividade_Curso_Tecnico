@@ -1,0 +1,39 @@
+@model IEnumerable<PacotesTuristicos>
+@{
+    ViewData["Title"] = "Lista";
+}
+
+<h2>Listagem de Pacotes Turisticos</h2>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Origem</th>
+            <th>Destino</th>
+            <th>Atrativos</th>
+            <th>Saida</th>
+            <th>Retorno</th>
+            <th>Usuario</th>
+            <th>Operações</th>
+        </tr>
+    </thead>
+        @foreach (PacotesTuristicos p in Model)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Nome</td>
+                <td>@p.Origem</td>
+                <td>@p.Destino</td>
+                <td>@p.Atrativos</td>
+                <td>@p.Saida.ToShortDateString()</td>
+                <td>@p.Retorno.ToShortDateString()</td>
+                <td>@p.Usuario</td>
+                <td>
+                    <a href="/PacotesTuristicos/Remover?Id=@p.Id" onclick="return confirm('Deseja excluir?');">Remover</a>
+                    <a href="/PacotesTuristicos/Editar?Id=@p.Id">Alterar</a>
+                </td>
+            </tr>
+        }
+</table>

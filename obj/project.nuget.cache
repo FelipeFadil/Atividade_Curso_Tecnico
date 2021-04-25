@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t0TgiJtNEK+VH5XcDcmKUOLVcozAodIacaeZTxhts5ziyN0gc+Oxr756S0RjzOOKUNemee9BEHtfwFxzxupuPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Docs Note\\Senac-EAD\\Modulo 1\\UC04 - Estruturar e implementar bando de dados\\UC04-Atividade_2-Felipe_Fadil\\UC04-Atividade_2-Felipe_Fadil.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\felip\\.nuget\\packages\\mysqlconnector\\1.3.2\\mysqlconnector.1.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}
